@@ -1,0 +1,121 @@
+{
+    "hotels": [
+        {
+            "city": "Paris",
+            "country": "France",
+            "displayType": "Hotel",
+            "hotelId": 4026401,
+            "isActive": 1,
+            "latitude": 48.875126,
+            "longitude": 2.293814,
+            "name": "Splendid Etoile Hotel",
+            "thumbnail_url": "https://az712897.vo.msecnd.net/images/full/58a45c7d-beef-42fa-a5f3-167610ba59a9.jpeg"
+        },
+        {
+            "city": "Paris",
+            "country": "France",
+            "displayType": "Hotel",
+            "hotelId": 8755005,
+            "isActive": 1,
+            "latitude": 48.86349,
+            "longitude": 2.3577,
+            "name": "Coeur de Paris Hotel de Ville",
+            "thumbnail_url": "https://az712897.vo.msecnd.net/images/full/883503e7-e565-4825-9a87-40d07cdd8c6c.jpeg"
+        },
+        {
+            "city": "Paris",
+            "country": "France",
+            "displayType": "Hotel",
+            "hotelId": 8414028,
+            "isActive": 1,
+            "latitude": 48.84124,
+            "longitude": 2.28948,
+            "name": "Artisan Lofts Paris Close Eiffel Tower",
+            "thumbnail_url": "https://az712897.vo.msecnd.net/images/full/dd553c45-0fe6-4bf5-9de5-93207492151e.jpeg"
+        },
+        {
+            "city": "Paris",
+            "country": "France",
+            "displayType": "Hotel",
+            "hotelId": 4558758,
+            "isActive": 1,
+            "latitude": 48.8467,
+            "longitude": 2.37009,
+            "name": "HÔtel De L'aveyron",
+            "thumbnail_url": "https://az712897.vo.msecnd.net/images/full/2a3ecb2f-1b2d-468a-88f6-645999c7e2ca.jpeg"
+        },
+        {
+            "city": "Paris",
+            "country": "France",
+            "displayType": "Hotel",
+            "hotelId": 4028850,
+            "isActive": 1,
+            "latitude": 48.851893,
+            "longitude": 2.338746,
+            "name": "Relais Saint Germain",
+            "thumbnail_url": "https://az712897.vo.msecnd.net/images/full/de49bfa8-dbd3-4205-a732-c192fa8b1636.jpeg"
+        }
+    ],
+    "locations": [
+        {
+            "city": "Paris",
+            "country": "France",
+            "displayType": "Location",
+            "googleType": {
+                "TypeNameAR": "مدينة",
+                "TypeNameEN": "city"
+            },
+            "name": "Paris",
+            "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+            "source": "google"
+        },
+        {
+            "city": "TX",
+            "country": "USA",
+            "displayType": "Location",
+            "googleType": {
+                "TypeNameAR": "مدينة",
+                "TypeNameEN": "city"
+            },
+            "name": "Paris",
+            "placeId": "ChIJmysnFgZYSoYRSfPTL2YJuck",
+            "source": "google"
+        },
+        {
+            "city": "Roissy-en-France",
+            "country": "France",
+            "displayType": "Location",
+            "googleType": {
+                "TypeNameAR": "المطار",
+                "TypeNameEN": "airport"
+            },
+            "name": "Paris-Charles de Gaulle Airport (CDG)",
+            "placeId": "ChIJW89MjgM-5kcRLKZbL5jgKwQ",
+            "source": "google"
+        },
+        {
+            "city": "TN",
+            "country": "USA",
+            "displayType": "Location",
+            "googleType": {
+                "TypeNameAR": "مدينة",
+                "TypeNameEN": "city"
+            },
+            "name": "Paris",
+            "placeId": "ChIJ4zHP-Sije4gRBDEsVxunOWg",
+            "source": "google"
+        },
+        {
+            "city": "Tillé",
+            "country": "France",
+            "displayType": "Location",
+            "googleType": {
+                "TypeNameAR": "المطار",
+                "TypeNameEN": "airport"
+            },
+            "name": "Paris Beauvais Airport",
+            "placeId": "ChIJLTyNDYxv5kcRbtc9TZBbD_o",
+            "source": "google"
+        }
+    ]
+}
