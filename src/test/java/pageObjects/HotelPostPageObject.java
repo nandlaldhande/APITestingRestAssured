@@ -3,6 +3,7 @@ package pageObjects;
 import gherkin.deps.com.google.gson.Gson;
 import io.restassured.response.Response;
 import model.request.Dates;
+import model.request.Guest;
 import model.request.Hotel;
 import model.request.Room;
 import org.junit.Assert;
@@ -11,6 +12,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -60,5 +62,21 @@ public class HotelPostPageObject extends BasePageObject {
 
     public void verifyTypeOfTheResponseIsHotel(String expectedReponseType, Response response) {
         Assert.assertTrue(responseType(response).equalsIgnoreCase(expectedReponseType));
+    }
+
+    public List<Room> createRoomsByConfigs(String roomConfig) {
+        List<Room> rooms = new ArrayList<>();
+        String[] g = roomConfig.split("/");
+        for (String a : g) {
+            int noOfGuests = Integer.valueOf(a.substring(0, a.indexOf("_")));
+            List<Guest> guests = new ArrayList<>();
+            for (int i = 0; i < noOfGuests; i++) {
+                guests.add(new Guest("ADT"));
+            }
+            Room room = new Room();
+            room.setGuest(guests);
+            rooms.add(room);
+        }
+        return rooms;
     }
 }

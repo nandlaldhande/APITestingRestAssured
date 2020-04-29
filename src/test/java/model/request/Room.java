@@ -17,4 +17,11 @@ public class Room
     public List<Guest> getGuest(){
         return this.guest;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "guest=" + guest +
+                '}';
+    }
 }

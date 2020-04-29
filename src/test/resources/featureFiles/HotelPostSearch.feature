@@ -1,15 +1,26 @@
 Feature: Hotel Search Post Service Tests
 	This feature includes tests that test the search hotel RESTFul service
+# Validation type one where we can match user can configure dates and rooms
+	@smokeTest
+	Scenario Outline:  Users are able to search hotels from system
+		Given the tajawal application is available
+		When user send the Hotel search request with  "<fromDate>" till "<toDate>" and runtime room config "<roomConfig>"
+		Then verify Status code of response is 200 Ok
+		And verify user get expected response "<expectedResponse>"
+		Examples:
+			|fromDate         |toDate         |roomConfig            |expectedResponse             |
+			|    11-09-2020   | 12-09-2020    |   2_adult/3_adult    |hotelPostSearchExpectedResultsWithRuntimeConfig|
+
 # Validation type one where we can match response as single entity and match it with saved expected response
-@smokeTest
-Scenario Outline:  Users are able to search hotels from system
-	Given the tajawal application is available
-	When user send the search Hotel request with "<fromDate>" till "<toDate>" and room config "<roomConfig>"
-	Then verify Status code of response is 200 Ok
-	And verify user get expected response "<expectedResponse>"
-	Examples:
-		|fromDate         |toDate         |roomConfig                            |expectedResponse                  |
-	    |    11-09-2020   | 12-09-2020    |   twoRoomsFourAdultsOneChildThree    |hotelPostSearchExpectedResults|
+	@smokeTest
+	Scenario Outline:  Users are able to search hotels from system
+		Given the tajawal application is available
+		When user send the search Hotel request with "<fromDate>" till "<toDate>" and room config "<roomConfig>"
+		Then verify Status code of response is 200 Ok
+		And verify user get expected response "<expectedResponse>"
+		Examples:
+			|fromDate         |toDate         |roomConfig                            |expectedResponse              |
+			|    11-09-2020   | 12-09-2020    |   twoRoomsFourAdultsOneChildThree    |hotelPostSearchExpectedResults|
 
 # Validation type two, where we can test specific fields from request vs response
 @smokeTest

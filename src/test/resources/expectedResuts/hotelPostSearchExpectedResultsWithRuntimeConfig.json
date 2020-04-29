@@ -1,0 +1,14 @@
+{
+    "type": "hotel",
+    "query": "paris/11-09-2020/12-09-2020/2_adult/3_adult",
+    "queryParameters": "sortBy=distanceScore&isGeo=1&hId=&isCountry=false&placeId=ChIJD7fiBh9u5kcRYJSMaMOCCwQ&types=",
+    "queryParametersObj": {
+        "sortBy": "distanceScore",
+        "isGeo": 1,
+        "hId": "",
+        "isCountry": "false",
+        "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+        "types": []
+    },
+    "isCountry": false
+}

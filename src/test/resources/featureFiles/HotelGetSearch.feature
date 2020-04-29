@@ -1,5 +1,5 @@
 Feature: Hotel search Get service tests
-
+#Basic validation for Hotel get request with destination as variable argument
 @smokeTest
 Scenario Outline:  Users are able to search hotels from system
 	Given the tajawal application is available

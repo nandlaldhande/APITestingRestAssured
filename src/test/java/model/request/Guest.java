@@ -28,4 +28,12 @@ public class Guest {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "type='" + type + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
